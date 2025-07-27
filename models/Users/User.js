@@ -71,6 +71,12 @@ const userSchema = new mongoose.Schema(
         },
       },
     ],
+    profileViews: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
     followers: [
       {
         userId: {
